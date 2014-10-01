@@ -1,0 +1,22 @@
+body{
+    background-color: #EFEFEF;
+}
+#cabecalho{
+    background-color: #DDD; float: left; width: 824px; margin-bottom: 10px; padding: 5px;
+}
+#menu_de_categorias{
+    background-color: #DDD; float: left; width: 250px; height: 560px; float: left; padding: 5px;
+}
+#conteudo{
+    float: left; width: 550px; margin-left: 10px; background-color: #DDD; padding: 6px;
+}
+.item-grid-home{
+    width: 250px; height: 225px; float: left; background-color: #FFF; margin-left: 5px; margin-bottom: 5px; padding: 9px;
+}
+.item-grid-home img{
+    width: 100px; height: 100px; margin-right: 5px; margin-bottom: 5px; float: left;
+}
+#rodape{
+    background-color: #DDD; float: left; width: 824px; margin-top: 10px; padding: 5px;
+}
+.clear-both{clear: both}
