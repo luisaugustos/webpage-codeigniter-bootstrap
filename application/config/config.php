@@ -14,7 +14,11 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost/codeigniter/';
+$protocol = "http" .((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "s" : "") . "://";
+$server   = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : $_SERVER['SERVER_NAME'];
+$basename = preg_replace('@/+$@','',dirname($_SERVER['SCRIPT_NAME'])).'/';
+
+$config['base_url'] = $protocol . $server . $basename;
 
 /*
 |--------------------------------------------------------------------------
