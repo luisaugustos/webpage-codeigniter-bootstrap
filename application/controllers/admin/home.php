@@ -17,7 +17,7 @@ class Home extends CI_Controller {
         $this->db->where('usuario',$usuario);
         $this->db->where('senha',$senha);
         $this->db->where('ativo',1);
-        $usuario = $this->db->get('usuario')->result();
+        $usuario = $this->db->get('usuarios')->result();
         if (count($usuario) === 1) {
             $dados = array('usuario' => $usuario[0]->usuario, 'logado' => TRUE);
             $this->session->set_userdata($dados);

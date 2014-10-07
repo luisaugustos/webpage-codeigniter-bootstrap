@@ -33,10 +33,12 @@ class Receitas extends CI_Controller {
     public function ver($slug_categoria = null) {
         //Recebendo os dados das categorias
         $data['categorias'] = $this->db->get('categorias')->result();
-
+        
         //recebendo dados da receita
         $this->db->where('slug_receita', $slug_categoria);
         $data2['receita'] = $this->db->get('receitas')->result();
+        var_dump($data2);
+        die();
 
         //Carregando as views
         $this->load->view('html_header');

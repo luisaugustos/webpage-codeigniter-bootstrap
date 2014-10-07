@@ -15,4 +15,4 @@
         echo link_tag('assets/bootstrap/js/bootstrap.min.js');
         ?>
     </head>
-    <body>
+    
